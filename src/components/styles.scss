@@ -1,0 +1,56 @@
+.container{
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 15px;
+    padding-right:150vh;
+    clear: both;
+    
+    
+}
+
+.slider{
+    display: flex;
+    cursor: pointer;
+   
+    
+    
+}
+
+.slider img{
+    height: 250px;
+    margin: 0 auto;
+}
+
+.sliderdos{
+    cursor: pointer;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.sliderdos img{
+    height: 250px;
+    margin: 0 auto;
+}
+
+
+.item{
+    height: 25rem;
+    max-width:25rem;
+    padding: 2rem;
+}
+
+.item img{
+    height: 260px;
+        object-fit: cover;
+        display: flex;
+            flex-direction: row;
+    
+}
+
+.subtitulo{
+    text-align: center;
+    padding-left: 650px;
+}
+

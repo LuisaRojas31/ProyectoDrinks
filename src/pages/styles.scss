@@ -1,0 +1,37 @@
+body{
+    background-image:url("../assets/fondodos.jpg") ;
+    font-family: 'Dosis', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+
+.encabezado{
+    &__header {
+        text-align: center;
+        background-color: #dda1a1;
+        height: 65px;
+        margin: 0 auto;
+        padding-top: 35px;
+        width: 0 auto;
+    }
+}
+
+.section{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.section__input{
+    cursor: pointer;
+    padding: 3px 10px;
+    border:gray 5px solid;
+    border-radius: 20px;
+}
+
+.ingredientes{
+    text-align: center;
+    margin-top: 10px;
+}
