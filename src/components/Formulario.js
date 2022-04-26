@@ -4,7 +4,7 @@ import { MyContext } from "../context/Context";
 import "./styles.scss";
 
 const Formulario = () => {
-  const { buscar, setBuscar, resultado, setResultado, setForm } =
+  const { buscar, setBuscar, setResultado} =
     useContext(MyContext);
   const navigate = useNavigate();
 

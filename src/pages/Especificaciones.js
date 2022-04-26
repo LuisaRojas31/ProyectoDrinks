@@ -4,7 +4,7 @@ import ById from "../components/ById";
 import { MyContext } from "../context/Context";
 
 const Especificaciones = () => {
-  const { id, titulo, imagen, resultado } = useContext(MyContext);
+  const { titulo, imagen, resultado } = useContext(MyContext);
 
   const navigate = useNavigate();
 
@@ -22,7 +22,7 @@ const Especificaciones = () => {
 
       <section className="especi">
         <h1>{titulo} </h1>
-        <img src={imagen} />
+        <img src={imagen} alt=""/>
         {resultado.drinks &&
           resultado.drinks.map((item) => (
             <div

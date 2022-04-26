@@ -6,23 +6,21 @@ export const ById = () => {
   const { id, setResultado } = useContext(MyContext);
 
   useEffect(() => {
-    instru();
-  }, []);
+    const instruDos = async () => {
+      await axios
+        .get(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`)
+        .then((res) => {
+          setResultado(res.data);
+        })
+        .catch(console.log);
+    };
+    instruDos();
+  }, [id, setResultado]);
 
-  const instru = async () => {
-    await axios
-      .get(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`)
-      .then((res) => {
-        setResultado(res.data);
-      })
-      .catch(console.log);
-  };
+  
 
-  return (
-    <div>
-      <h1>Pintar datos</h1>
-    </div>
-  );
+  return;
+    
 };
 
 export default ById;
