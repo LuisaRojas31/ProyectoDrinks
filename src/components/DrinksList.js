@@ -10,7 +10,7 @@ const Prueba = () => {
       <div className="container">
         <div className="slider">
           {imagenesUno[0].map((image) => (
-            <div className="item">
+            <div className="item" key={image.id}>
               <img src={image.imageUrl} alt={image.title} />
               <div className="cajaunoboton">
                 <h4>{image.title}</h4>
@@ -23,7 +23,7 @@ const Prueba = () => {
       <div className="containerdos">
         <div className="sliderdos">
           {imagenesDos[1].map((image) => (
-            <div className="itemdos">
+            <div className="itemdos" key={image.id}>
               <img src={image.imageUrl} alt={image.title} />
               <h1>Ingredientes</h1>
               <div className="cajaboton">
