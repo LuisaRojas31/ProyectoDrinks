@@ -22,15 +22,10 @@ const Especificaciones = () => {
 
       <section className="especi">
         <h1>{titulo} </h1>
-        <img src={imagen} alt=""/>
+        <img src={imagen} alt="" />
         {resultado.drinks &&
           resultado.drinks.map((item) => (
-            <div
-              key={item.idDrink}
-              to="/espec"
-              // className="container__tarjeta"
-              // onClick={()=> handleClick(item.idDrink, item.strDrink,item.strDrinkThumb  ) }
-            >
+            <div>
               <p>{item.strInstructions}</p>
               <li>{item.strIngredient1}</li>
               <li>{item.strIngredient2}</li>
