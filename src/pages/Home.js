@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import Prueba from "../components/DrinksList";
 import Formulario from "../components/Formulario";
 import { Instrucciones } from "../components/Intrucciones";
