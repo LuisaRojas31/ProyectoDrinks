@@ -5,41 +5,37 @@ import imagenesDos from "../exports/imagenes";
 import "./styles.scss";
 
 const Prueba = () => {
-    
-   
-    return(
-        <section>
-        <div className="container">
-            <div className="slider">
-            {imagenesUno[0].map(image => (
-               <div className="item"> 
-               <img src={image.imageUrl} 
-               alt={image.title}/>
-               <h1>Bebidas</h1>
-               <div>
-                   <h4>{image.title}</h4>
-                   <button>Descripcion</button>
-               </div>
-               </div>
-            ))} 
+  return (
+    <section>
+      <div className="container">
+        <div className="slider">
+          {imagenesUno[0].map((image) => (
+            <div className="item">
+              <img src={image.imageUrl} alt={image.title} />
+              <div className="cajaunoboton">
+                <h4>{image.title}</h4>
+                <button>Descripcion</button>
+              </div>
             </div>
-            <h3 className="subtitulo">Ingredientes</h3>
+          ))}
+        </div>
+      </div>
+      <div className="containerdos">
+        <div className="sliderdos">
+          {imagenesDos[1].map((image) => (
+            <div className="itemdos">
+              <img src={image.imageUrl} alt={image.title} />
+              <h1>Ingredientes</h1>
+              <div className="cajaboton">
+                <h4>{image.title}</h4>
+                <button>Descripcion</button>
+              </div>
             </div>
-            <div className="sliderdos">
-            {imagenesDos[1].map(image => (
-               <div className="item"> 
-               <img src={image.imageUrl} 
-               alt={image.title}/>
-               <h1>Ingredientes</h1>
-               <div>
-                   <h4>{image.title}</h4>
-                   <button>Descripcion</button>
-               </div>
-               </div>
-            ))}
-            </div>
-            </section>
-    )
-}
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default Prueba;

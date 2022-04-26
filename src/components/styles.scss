@@ -1,56 +1,99 @@
-.container{
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 15px;
-    padding-right:150vh;
-    clear: both;
-    
-    
+.container {
+  width: 300px;
+  height: 350px;
+  -webkit-flex-direction: column;
+  display: flex;
+  float: left;
+  flex-direction: column;
+  line-height: 0;
 }
 
-.slider{
-    display: flex;
-    cursor: pointer;
-   
-    
-    
+.slider {
+  display: flex;
+  cursor: pointer;
+  width: 300px;
+  height: 200px;
 }
 
-.slider img{
-    height: 250px;
-    margin: 0 auto;
+.slider img {
+  width: 300px;
+  height: 200px;
 }
 
-.sliderdos{
-    cursor: pointer;
-    justify-content: space-between;
-    display: flex;
-    flex-direction: row;
-
+.item img {
+  height: 260px;
+  object-fit: cover;
+  display: flex;
+  flex-direction: row;
+  margin-right: 25px;
+  -webkit-flex-direction: column;
 }
 
-.sliderdos img{
-    height: 250px;
-    margin: 0 auto;
+.cajaunoboton button {
+  border-radius: 5px;
+  padding: 10px 7px;
+  text-decoration: none;
+  color: black;
+  background-color: lightgray;
+  margin: 5px;
+  text-align: center;
+  cursor: pointer;
 }
 
-
-.item{
-    height: 25rem;
-    max-width:25rem;
-    padding: 2rem;
+.containerdos {
+  width: 300px;
+  height: 350px;
+  flex-direction: column;
+  line-height: 0;
 }
 
-.item img{
-    height: 260px;
-        object-fit: cover;
-        display: flex;
-            flex-direction: row;
-    
+.sliderdos {
+  display: flex;
+  cursor: pointer;
+  width: 300px;
+  height: 200px;
 }
 
-.subtitulo{
-    text-align: center;
-    padding-left: 650px;
+.sliderdos img {
+  width: 300px;
+  height: 200px;
 }
 
+.itemdos {
+  margin-right: 25px;
+}
+
+.itemdos img {
+  height: 260px;
+  object-fit: cover;
+  display: flex;
+  flex-direction: row;
+  -webkit-flex-direction: column;
+  padding-top: 35px;
+}
+
+.cajaboton button {
+  border-radius: 5px;
+  padding: 10px 7px;
+  text-decoration: none;
+  color: black;
+  background-color: lightgray;
+  margin: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.subtitulo {
+  text-align: center;
+  padding-left: 650px;
+  line-height: 0;
+  flex-direction: column;
+}
+
+.section__input {
+  cursor: pointer;
+  border: gray 5px solid;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
