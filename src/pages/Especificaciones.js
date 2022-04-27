@@ -5,7 +5,6 @@ import { MyContext } from "../context/Context";
 
 const Especificaciones = () => {
   const { titulo, imagen, resultado } = useContext(MyContext);
-
   const navigate = useNavigate();
 
   ById();
@@ -19,7 +18,6 @@ const Especificaciones = () => {
       <div className="contenedor__especi">
         <h1>Especificaciones</h1>
       </div>
-
       <section className="especi">
         <h1>{titulo} </h1>
         <img src={imagen} alt="" />

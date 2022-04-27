@@ -7,6 +7,7 @@ export const Provider = ({ children }) => {
   const [titulo, setTitulo] = useState("");
   const [id, setId] = useState("");
   const [imagen, setImagen] = useState("");
+  const [byId, setById] = useState("");
 
   return (
     <MyContext.Provider
@@ -21,6 +22,8 @@ export const Provider = ({ children }) => {
         setId,
         imagen,
         setImagen,
+        byId,
+        setById,
       }}
     >
       {children}

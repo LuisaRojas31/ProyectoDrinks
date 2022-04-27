@@ -6,17 +6,20 @@ export const Instrucciones = () => {
   const { buscar, setResultado } = useContext(MyContext);
 
   useEffect(() => {
-    instru();
-  }, []);
+    const instru = async () => {
+      try {
+        const response = await axios.get(
+          `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${buscar}`
+        );
+        const { data, status } = response;
+        if (status === 200) setResultado(data);
+      } catch (e) {
+        console.log(e);
+      }
+    };
 
-  const instru = async () => {
-    await axios
-      .get(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${buscar}`)
-      .then((res) => {
-        setResultado(res.data);
-      })
-      .catch(console.log);
-  };
+    instru();
+  }, [buscar, setResultado]);
 
   return;
 };

@@ -5,11 +5,13 @@ import { MyContext } from "../context/Context";
 import "./styles.scss";
 
 const Detalles = () => {
-  const { resultado, setId, setTitulo, setImagen } = useContext(MyContext);
+  const { resultado, setId, setTitulo, setImagen, setById } =
+    useContext(MyContext);
 
   Instrucciones();
 
   const handleClick = (id, titulo, imagen) => {
+    setById("");
     setId(id);
     setTitulo(titulo);
     setImagen(imagen);
@@ -31,7 +33,7 @@ const Detalles = () => {
               }
             >
               <li className="lista">{item.strDrink}</li>
-              <img className="tarjeta" src={`${item.strDrinkThumb}`} />
+              <img className="tarjeta" src={`${item.strDrinkThumb}`} alt="" />
             </Link>
           ))}
       </section>
